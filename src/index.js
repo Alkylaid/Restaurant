@@ -4,6 +4,7 @@ import {initMain, setContent} from './main.js';
 
 import './style.css';
 import './imgs/splash.jpg';
+import img from './imgs/burntends.jpg';
 
 const content = document.getElementById('content');
 initMain();

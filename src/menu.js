@@ -1,4 +1,5 @@
 export { getMenu };
+import img from './imgs/burntends.jpg';
 
 const meatPlates = [
   'Brisket',
@@ -54,6 +55,10 @@ function getMenu() {
   getPlates(sandwiches);
   getPlates(kidsMenu);
   getPlates(drinks);
+  const image = new Image();
+  image.src = img;
+  image.setAttribute('id', 'menuImage');
+  menuList.append(image);
 }
 
 function getPlates(food) {

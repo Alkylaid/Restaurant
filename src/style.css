@@ -102,7 +102,8 @@ body {
 #menuHeading{
     padding-top: 0px;
     font-size: 6rem;
-    margin: 0;
+    margin-bottom: 50px;
+    margin-top: 0px;
 }
 #menuList ul {
     list-style: none;
@@ -115,15 +116,23 @@ body {
     width: 100%;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(2, 1fr);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     align-items: start;
     justify-items: start;
-    gap: 50px;
+    column-gap: 30px;
+    row-gap: 25px;
+}
+
+#menuImage{
+    width: 325px;
+    align-self: center;
+    border-radius: 10px;
 }
 
 
 h2{
     font-size: 2rem;
+    
 }
 
 
