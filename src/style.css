@@ -135,7 +135,22 @@ h2{
     
 }
 
+#contactInfo{
+    font-size: 1.3rem;
+}
 
+#contactInfo h2{
+    margin: 0;
+}
+
+#contactInfo h3{
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+#contactInfo p{
+    margin: 0;
+}
 #footer{
     height: 7vh;
     background-color: rgba(0,0,0, 0.7);

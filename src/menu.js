@@ -33,22 +33,22 @@ const kidsMenu = [
 ];
 
 const drinks = [
-    'Soda',
-    'Beer',
-    'Boba Tea',
-    'Iced Tea',
-    'Sweet Tea',
-    'Lemondae'
-]
+  'Soda',
+  'Beer',
+  'Boba Tea',
+  'Iced Tea',
+  'Sweet Tea',
+  'Lemondae',
+];
 
 function getMenu() {
   const mainInfo = document.querySelector('.mainInfo');
   const heading = document.createElement('h1');
-  heading.innerHTML = "Menu";
+  heading.innerHTML = 'Menu';
   heading.setAttribute('id', 'menuHeading');
   mainInfo.append(heading);
   const menuList = document.createElement('div');
-  menuList.setAttribute('id','menuList');
+  menuList.setAttribute('id', 'menuList');
   mainInfo.append(menuList);
   getPlates(meatPlates);
   getPlates(sides);
@@ -73,9 +73,9 @@ function getPlates(food) {
   } else if (food === sandwiches) {
     platesHeading.innerHTML = 'Sandwiches';
   } else if (food === kidsMenu) {
-    platesHeading.innerHTML = "Kid's Menu"
+    platesHeading.innerHTML = "Kid's Menu";
   } else if (food === drinks) {
-    platesHeading.innerHTML = "Drinks's Menu"
+    platesHeading.innerHTML = "Drinks's Menu";
   }
   const ul = document.createElement('ul');
   food.forEach((item) => {
