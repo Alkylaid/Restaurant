@@ -53,7 +53,7 @@ body {
     align-items: center;
 }
 
-#mainInfo {
+.mainInfo {
     width: 1200px;
     height: 75%;
     background-color: rgba(0,0,0, 0.7);

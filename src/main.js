@@ -1,4 +1,4 @@
-export {initMain, getHome};
+export {initMain, setContent};
 
 
 function initMain() {
@@ -6,18 +6,20 @@ function initMain() {
    const main = document.createElement('div');
    main.setAttribute('id', 'main');
    const mainInfo = document.createElement('div');
-   mainInfo.setAttribute('id', 'mainInfo');
+   mainInfo.classList.add('mainInfo');
    main.appendChild(mainInfo);
    content.append(main);
 }
 
 function setContent(content) {
-
+    if (content === "Home") {
+        getHome();
+    }
 }
 
 
 function getHome() {
-    const mainInfo = document.getElementById('mainInfo');
+    const mainInfo = document.querySelector('.mainInfo');
     const heading = document.createElement('h1');
     heading.innerHTML = "Texas BBQ Experience";
     mainInfo.appendChild(heading);
@@ -55,3 +57,4 @@ function getHours(element) {
     element.append(hours);
     
 }
+

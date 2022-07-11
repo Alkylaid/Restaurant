@@ -1,4 +1,4 @@
-import {initMenu} from './menu.js';
+import {initNavMenu} from './navmenu.js';
 import {initFooter} from './footer.js';
 import {initMain} from './main.js';
 
@@ -7,6 +7,6 @@ import './imgs/splash.jpg';
 
 const content = document.getElementById('content');
 initMain();
-initMenu();
+initNavMenu();
 
 initFooter();
