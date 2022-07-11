@@ -50,7 +50,6 @@ function initClickEvents() {
             while (mainInfo.hasChildNodes()) {
                 mainInfo.removeChild(mainInfo.lastChild);
             }
-            console.log(button.value);
             setContent(button.value);
             buttons.forEach((item) => {
                 item.classList.remove('active');

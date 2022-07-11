@@ -9,11 +9,14 @@ body {
     font-family: 'Edu TAS Beginner', cursive;
     font-size: 16px;
     color: #fff;
+    background-attachment: fixed;
 }
 
 #content {
     display: flex;
     flex-flow: column wrap;
+    min-height: 100%;
+    margin-bottom: -10vh;
 }
 
 #header{
@@ -47,7 +50,7 @@ body {
 #main{
     width: 100%;
     background-color: rgba(0,0,0, 0.5);
-    height: 80vh;
+    min-height: 86vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,17 +58,22 @@ body {
 
 .mainInfo {
     width: 1200px;
-    height: 75%;
+    margin-top: 100px;
+    margin-bottom: 100px;
     background-color: rgba(0,0,0, 0.7);
     border-radius: 10px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    display: grid;
+    justify-items: center;
+    font-size: 1.6rem;
 }
 
-#mainInfo h1{
+#homeInfo{
+    padding: 50px;
+}
+
+#homeInfo > h1{
     color: #fff;
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
 }
 
@@ -87,15 +95,40 @@ body {
     justify-content: space-between;
 }
 
+#menuInfo {
+    padding:50px;
+}
 
+#menuHeading{
+    padding-top: 0px;
+    font-size: 6rem;
+    margin: 0;
+}
+#menuList ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+#menuList{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 1.4rem;
+    align-items: start;
+    justify-items: start;
+    gap: 50px;
+}
+
+
+h2{
+    font-size: 2rem;
+}
 
 
 #footer{
-    height: 13vh;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    height: 7vh;
     background-color: rgba(0,0,0, 0.7);
 
 }
