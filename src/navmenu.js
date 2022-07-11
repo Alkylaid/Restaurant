@@ -9,32 +9,9 @@ header.setAttribute('id', 'header');
 
 const navButtons = document.createElement('div');
 navButtons.setAttribute('id', 'navButtons');
-
-
-const homeBtn = document.createElement('button')
-const menuBtn = document.createElement('button');
-const contactBtn = document.createElement('button');
-
-
-homeBtn.setAttribute('id', 'home-button');
-homeBtn.innerHTML = "Home";
-homeBtn.value = "Home";
-homeBtn.classList.add('buttons');
-
-
-menuBtn.setAttribute('id', 'menu-button');
-menuBtn.innerHTML = "Menu";
-menuBtn.value = "Menu";
-menuBtn.classList.add('buttons');
-
-contactBtn.setAttribute('id', 'contact-button');
-contactBtn.classList.add('buttons');
-contactBtn.value = "Contact";
-contactBtn.innerHTML= "Contact"
-
-navButtons.appendChild(homeBtn);
-navButtons.appendChild(menuBtn);
-navButtons.appendChild(contactBtn);
+navButtons.appendChild(createButton('Home', 'home-button'));
+navButtons.appendChild(createButton('Menu', 'menuBtn'));
+navButtons.appendChild(createButton('Contact', 'contact-button'));
 header.appendChild(navButtons);
 content.prepend(header);
 initClickEvents();
@@ -59,4 +36,14 @@ function initClickEvents() {
     })
    })
     
+}
+
+function createButton(name, id) {
+    const button = document.createElement('button');
+    button.setAttribute('id', id);
+    button.innerHTML = name;
+    button.value = name;
+    button.classList.add('buttons');
+    
+    return button;
 }
