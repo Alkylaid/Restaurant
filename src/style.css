@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap');
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin: 0 auto;
+    background-image: url('./imgs/splash.jpg');
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 16px;
+    color: #fff;
+}
+
+#content {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#header{
+    height: 7vh;
+    background-color: rgba(0,0,0, 0.7);
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+}
+
+.buttons {
+    width: 150px;
+    height: 100%;
+    color: white;
+    background-color: #000000;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 1.2rem;
+    border-right: 1px solid #252525;
+}
+
+.buttons:hover{
+    background-color: rgba(0,0,0, 0.2);
+   
+}
+
+.buttons.active{
+    background-color: rgba(50, 50, 50, 0.2);
+}
+
+
+#main{
+    width: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainInfo {
+    width: 1200px;
+    height: 75%;
+    background-color: rgba(0,0,0, 0.7);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#mainInfo h1{
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#mainInfo #intro {
+    font-size: 1.7rem;
+    margin: 50px;
+}
+
+.storeHours {
+    list-style: none;
+    width: 400px;
+    font-size: 1.4rem;
+}
+
+.storeHours li {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+
+
+
+#footer{
+    height: 13vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.7);
+
+}
